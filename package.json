@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "mini-css-extract-plugin": "^2.6.0"
+  }
+}

@@ -1,0 +1,103 @@
+[{
+	"name": "荷塘清趣",
+	"detail": "荷花池",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8316",
+	"latitude": "23.194453",
+	"longitude": "114.113997"
+}, {
+	"name": "草坪春晖",
+	"detail": "大草坪",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8318",
+	"latitude": "23.194527",
+	"longitude": "114.113087"
+}, {
+	"name": "村落民居",
+	"detail": "民居",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8320",
+	"latitude": "23.196309",
+	"longitude": "114.114166"
+}, {
+	"name": "平伯陈公祠",
+	"detail": "平伯陈公祠",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8321",
+	"latitude": "23.194889",
+	"longitude": "114.113862"
+}, {
+	"name": "农耕夕影",
+	"detail": "农耕夕影",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8322",
+	"latitude": "23.194871",
+	"longitude": "114.112226"
+}, {
+	"name": "蔚园屋语",
+	"detail": "陈百万故居。兴建于1753年（乾隆年间）7000多平米，布局呈矩形。是古村最气派的建筑",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8323",
+	"latitude": "23.194178",
+	"longitude": "114.112475"
+}, {
+	"name": "陈百万故居",
+	"detail": "陈百万故居建筑结构最为特别，豪华气派。建于清朝乾隆十一年（1746年），坐南向北，通面阔46米，通进深32米，占地面积达1472多平方米。硬山顶，龙船脊，阴阳瓦。墙下部花岗石砌、上部青砖清水墙。",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8324",
+	"latitude": "23.1942",
+	"longitude": "114.111933"
+}, {
+	"name": "古榄雅风",
+	"detail": "<p>古橄榄树群</p>",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8325",
+	"latitude": "23.193201",
+	"longitude": "114.111925"
+}, {
+	"name": "古宅遗韵",
+	"detail": "古房",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8326",
+	"latitude": "23.193928",
+	"longitude": "114.113006"
+}, {
+	"name": "停车",
+	"detail": "停车区",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8328",
+	"latitude": "23.193755",
+	"longitude": "114.114543"
+}, {
+	"name": "农家乐",
+	"detail": "",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8329",
+	"latitude": "23.193607",
+	"longitude": "114.114739"
+}, {
+	"name": "卫生间",
+	"detail": "卫生间",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8330",
+	"latitude": "23.1938",
+	"longitude": "114.115037"
+}, {
+	"name": "聘君陈公祠",
+	"detail": "<p>兴建于乾隆28年，省级文物保护单位。陈聘君是陈百万伯父。与众不同的红石柱红石墙的祠堂，这种装束在当时是有名望的人才能兴建，因为陈聘君的儿子在朝廷做官。红祠堂是身份地位，等级的标志。</p>",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8331",
+	"latitude": "23.19495",
+	"longitude": "114.112989"
+}, {
+	"name": "洛峰陈公祠",
+	"detail": "始建于咸丰6年（1856），省级文物保护单位。陈洛峰是陈百万的儿子。这是最为华丽的一座祠堂。经专家的考察，彩绘，木刻，石雕，灰塑这些工艺代表了当时的最高水平。",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8332",
+	"latitude": "23.195735",
+	"longitude": "114.113768"
+}, {
+	"name": "梅花园",
+	"detail": "梅花园",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8333",
+	"latitude": "23.195085",
+	"longitude": "114.110186"
+}, {
+	"name": "民宿区",
+	"detail": "民宿",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8334",
+	"latitude": "23.196175",
+	"longitude": "114.114783"
+}, {
+	"name": "接待中心",
+	"detail": "",
+	"mapInfoUrl": "/subpages/card/card_map/map_info?coordinateId=8335",
+	"latitude": "23.193365",
+	"longitude": "114.114825"
+}]

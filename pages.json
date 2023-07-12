@@ -1,0 +1,741 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+		"^ru-(.*)": "@/components/ru-$1.vue",
+		"^diy-(.*)": "@/components/diy-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "乡村名片",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/mapRural",
+			"style": {
+				"navigationBarTitleText": "地图找村",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index_news",
+			"style": {
+				"navigationBarTitleText": "乡村名片",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/rural",
+			"style": {
+				"navigationBarTitleText": "发现乡村",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/build/buildad",
+			"style": {
+				"navigationBarTitleText": "乡村名片共建",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/home",
+			"style": {
+				"navigationBarTitleText": "好物商城",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/detail",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/comment",
+			"style": {
+				"navigationBarTitleText": "评论",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/goodsList",
+			"style": {
+				"navigationBarTitleText": "商品详情",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/selectAddr",
+			"style": {
+				"navigationBarTitleText": "选择地址",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/address",
+			"style": {
+				"navigationBarTitleText": "新增地址",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/shop/settle",
+			"style": {
+				"navigationBarTitleText": "结算",
+				"navigationStyle": "custom"
+			}
+		}
+	],
+	"subPackages": [{
+		"root": "subpages",
+		"pages": [{
+				"path": "edu/edu",
+				"style": {
+					"navigationBarTitleText": "乡村名片学院",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "search/search",
+				"style": {
+					"navigationBarTitleText": "乡村搜索",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "edu/edu_info",
+				"style": {
+					"navigationBarTitleText": "名片详情",
+					"navigationStyle": "default"
+				}
+			}, {
+				"path": "login/login",
+				"style": {
+					"navigationBarTitleText": "登录",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "card/card",
+				"style": {
+					"navigationBarTitleText": "乡村名片",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/subCard/sharebusinesscards",
+				"style": {
+					"navigationBarTitleText": "生成海报",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_service/service_list",
+				"style": {
+					"navigationBarTitleText": "服务管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_service/service_info",
+				"style": {
+					"navigationBarTitleText": "服务详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_service/add_service",
+				"style": {
+					"navigationBarTitleText": "服务发布",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_service/service_column",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom"
+				}
+
+			},
+			{
+				"path": "card/card_service/service_waterfalls",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom"
+				}
+
+			},
+			{
+				"path": "card/card_photo/photo_list",
+				"style": {
+					"navigationBarTitleText": "图集管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_photo/add_photo",
+				"style": {
+					"navigationBarTitleText": "图集发布",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_photo/photo_info",
+				"style": {
+					"navigationBarTitleText": "图集详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_photo/photo_column",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom"
+				}
+
+			},
+			{
+				"path": "card/card_map/add_map",
+				"style": {
+					"navigationBarTitleText": "新增地图标点",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_map/map_info",
+				"style": {
+					"navigationBarTitleText": "坐标详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_map/map_list",
+				"style": {
+					"navigationBarTitleText": "坐标详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_map/map_column",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom"
+				}
+
+			},
+			{
+				"path": "card/card_ar/card_ar",
+				"style": {
+					"navigationBarTitleText": "乡村AR",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_info/about",
+				"style": {
+					"navigationBarTitleText": "乡村简介",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_news/news_info",
+				"style": {
+					"navigationBarTitleText": "文章详情",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_news/news_list",
+				"style": {
+					"navigationBarTitleText": "文章列表",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_news/add_news",
+				"style": {
+					"navigationBarTitleText": "添加资讯",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/card_news/news_column",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "card/subCard/shareImg",
+				"style": {
+					"navigationBarTitleText": "生成海报",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "testPage/testPage",
+				"style": {
+					"navigationBarTitleText": "上传",
+					"enablePullDownRefresh": false
+				}
+			},
+			{
+				"path": "testPage/testMap",
+				"style": {
+					"navigationBarTitleText": "手绘地图",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "myrural/myrural",
+				"style": {
+					"navigationBarTitleText": "我的村",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "myrural/rural_home",
+				"style": {
+					"navigationBarTitleText": "我的村",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "myrural/rural_list",
+				"style": {
+					"navigationBarTitleText": "我的村列表",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "myrural/rural_search",
+				"style": {
+					"navigationBarTitleText": "乡村搜索",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "myrural/rural_join",
+				"style": {
+					"navigationBarTitleText": "加入乡村",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "myrural/rural_add",
+				"style": {
+					"navigationBarTitleText": "创建乡村",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "waterfall/waterfall",
+				"style": {
+					"navigationBarTitleText": "瀑布流测试",
+					"navigationStyle": "default"
+				}
+			}, {
+				"path": "build/build",
+				"style": {
+					"navigationBarTitleText": "乡村共建",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "build/rural_info/rural_info",
+				"style": {
+					"navigationBarTitleText": "乡村基本信息",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_diy/rural_diy",
+				"style": {
+					"navigationBarTitleText": "名片模块化管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_diy/diy_menu",
+				"style": {
+					"navigationBarTitleText": "名片菜单DIY",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_diy/modular",
+				"style": {
+					"navigationBarTitleText": "名片模块选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_diy/cubeUrl",
+				"style": {
+					"navigationBarTitleText": "名片模块数据选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_info/info_edit",
+				"style": {
+					"navigationBarTitleText": "乡村基本信息",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "build/rural_info/tools",
+				"style": {
+					"navigationBarTitleText": "乡村工具箱",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "build/rural_info/info_banner",
+				"style": {
+					"navigationBarTitleText": "乡村轮播图管理",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "build/rural_info/info_service",
+				"style": {
+					"navigationBarTitleText": "乡村基础设施服务",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "build/rural_info/info_map",
+				"style": {
+					"navigationBarTitleText": "乡村基本信息",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_info/info_cubeUrl",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false,
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_info/info_navmagic",
+				"style": {
+					"navigationBarTitleText": "乡村导航编辑",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_news/rural_news",
+				"style": {
+					"navigationBarTitleText": "乡村资讯管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_news/news_tag",
+				"style": {
+					"navigationBarTitleText": "资讯标签管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_news/edit_news",
+				"style": {
+					"navigationBarTitleText": "资讯内容编辑",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_news/list_style",
+				"style": {
+					"navigationBarTitleText": "资讯分类列表模板选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_service/rural_service",
+				"style": {
+					"navigationBarTitleText": "乡村好物管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_service/service_tag",
+				"style": {
+					"navigationBarTitleText": "好物标签管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_service/edit_service",
+				"style": {
+					"navigationBarTitleText": "好物内容编辑",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_service/list_style",
+				"style": {
+					"navigationBarTitleText": "好物分类列表模板选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_map/rural_map",
+				"style": {
+					"navigationBarTitleText": "乡村向导管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_map/map_tag",
+				"style": {
+					"navigationBarTitleText": "乡村向导标签",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_map/edit_map",
+				"style": {
+					"navigationBarTitleText": "编辑向导内容",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_map/list_style",
+				"style": {
+					"navigationBarTitleText": "位置分类列表模板选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_map/map_drawn",
+				"style": {
+					"navigationBarTitleText": "手绘增强地图",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_map/map_config",
+				"style": {
+					"navigationBarTitleText": "地图向导配置",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_message/rural_message",
+				"style": {
+					"navigationBarTitleText": "乡村留言管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_photo/rural_photo",
+				"style": {
+					"navigationBarTitleText": "乡村图集管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_photo/photo_tag",
+				"style": {
+					"navigationBarTitleText": "乡村图集标签",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_photo/edit_photo",
+				"style": {
+					"navigationBarTitleText": "编辑向导内容",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_photo/list_style",
+				"style": {
+					"navigationBarTitleText": "图集分类列表模板选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_planning/rural_planning",
+				"style": {
+					"navigationBarTitleText": "乡村路线管理",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_planning/planning_tag",
+				"style": {
+					"navigationBarTitleText": "乡村路线标签",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_planning/edit_planning",
+				"style": {
+					"navigationBarTitleText": "编辑路线内容",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_planning/list_style",
+				"style": {
+					"navigationBarTitleText": "路线分类列表模板选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_diy/cubeIcon",
+				"style": {
+					"navigationBarTitleText": "标签图标选择",
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "build/rural_vr/rural_vr",
+				"style": {
+					"navigationBarTitleText": "乡村全景管理",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "user/web_view",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "user/qa",
+				"style": {
+					"navigationBarTitleText": "常见问题",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "user/report",
+				"style": {
+					"navigationBarTitleText": "内容举报",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "user/user_info/user_info",
+				"style": {
+					"navigationBarTitleText": "个人信息",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "user/user_info/info_edit",
+				"style": {
+					"navigationBarTitleText": "修改信息",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "user/user_setting/user_setting",
+				"style": {
+					"navigationBarTitleText": "设置",
+					"navigationStyle": "default"
+				}
+			},
+			{
+				"path": "user/user_setting/follow",
+				"style": {
+					"navigationBarTitleText": "关注我们",
+					"navigationStyle": "default"
+				}
+			}, {
+				"path": "index/demo",
+				"style": {
+					"navigationBarTitleText": "名片示例",
+					"navigationStyle": "default"
+				}
+			}, {
+				"path": "vr/vr",
+				"style": {
+					"navigationBarTitleText": "乡村名片全景载入中...",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "person/index",
+				"style": {
+					"navigationBarTitleText": "人员主页",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "person/detail",
+				"style": {
+					"navigationBarTitleText": "人员详情",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "person/order",
+				"style": {
+					"navigationBarTitleText": "订单确认",
+					"navigationStyle": "custom"
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "乡村名片",
+		"navigationBarBackgroundColor": "#f1f1f1",
+		"backgroundColor": "#f1f1f1"
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#404040",
+		"selectedColor": "#04c354",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "/static/card_nav_6.png", //未选中tab图标路径
+				"selectedIconPath": "/static/card_nav_6_1.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/index/rural",
+				"text": "发现",
+				"iconPath": "/static/card_nav_3.png", //未选中tab图标路径
+				"selectedIconPath": "/static/card_nav_3_1.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/build/buildad",
+				"text": "共建",
+				"iconPath": "/static/card_nav_5.png", //未选中tab图标路径
+				"selectedIconPath": "/static/card_nav_5_1.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/shop/home",
+				"text": "商城",
+				"iconPath": "/static/card_nav_5.png", //未选中tab图标路径
+				"selectedIconPath": "/static/card_nav_5_1.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "/static/card_nav_4.png", //未选中tab图标路径
+				"selectedIconPath": "/static/card_nav_4_1.png" //选中tab图标路径
+			}
+		]
+	}
+}

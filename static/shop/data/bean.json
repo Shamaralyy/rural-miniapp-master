@@ -1,0 +1,22 @@
+[{
+		"id": "1",
+		"name": "特产原味腐竹黄豆制品素食腐竹360克袋装",
+		"description": "",
+		"price": "28",
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bean/WPS图片(1).jpg"
+	},
+	{
+		"id": "2",
+		"name": "杂粮面豆面500g",
+		"description": "",
+		"price": "16",
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bean/WPS图片(2).jpg"
+	},
+	{
+		"id": "3",
+		"name": "牦牛乳品全脂营养奶粉",
+		"description": "",
+		"price": "75",
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bean/WPS图片(3).jpg"
+	}
+]
