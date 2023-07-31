@@ -1,8 +1,7 @@
 <template>
-	<view>
+	<view class="container">
 		<u-navbar @leftClick="leftClick()" title="下单" :autoBack="true" :placeholder="true" leftIconColor="black"
 			:titleStyle="{ color: 'black' }"></u-navbar>
-
 		<view class="card flex-card">
 			<text>预约时间：</text>
 			<text class="choose-time" v-if="!timeFlag" @tap="toggle('center')">点击选择服务时间</text>
@@ -14,9 +13,9 @@
 			+添加新地址
 		</view>
 		<view v-else class="card" @click="addAddr">
-			<view class="text">收货人：{{defaultAddr.name}}</view>
+			<view class="text">联系人：{{defaultAddr.name}}</view>
 			<view class="text">联系方式：{{defaultAddr.phone}}</view>
-			<view class="text">收货地址：{{defaultAddr.addr}}{{defaultAddr.detail}}</view>
+			<view class="text">服务地址：{{defaultAddr.addr}}{{defaultAddr.detail}}</view>
 			<uni-icons class="i_forward" type="forward" size="20"></uni-icons>
 		</view>
 
@@ -125,14 +124,19 @@
 					url: '/pages/shop/selectAddr?index=2'
 				})
 			},
+			leftClick() {
+				uni.navigateBack({
+					delta: 1
+				});
+			},			
 		}
 	}
 </script>
 
 <style>
-	page {
+	.container {
 		background: #f1f1f1;
-		height: 100%;
+		height: 100vh;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -176,7 +180,7 @@
 
 	.person-order-btn {
 		position: fixed;
-		bottom: 0rpx;
+		bottom: 0;
 		width: 750rpx;
 		height: 80rpx;
 		line-height: 80rpx;

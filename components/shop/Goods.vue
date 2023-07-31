@@ -1,8 +1,9 @@
 <template>
 	<uni-grid :column="2" :highlight="true" @change="change" :showBorder="false">
-		<uni-grid-item v-for="(item, index) in products" :index="index" :key="index" @tap="toDetail(item)" style="height: 420rpx;">
+		<uni-grid-item :class="['item-'+index]" v-for="(item, index) in products" :index="index" :key="index" @tap="toDetail(item)"
+			style="height: 420rpx;">
 			<view class="grid-item-box" style="background-color: #fff;">
-				<img mode="scaleToFill" class="goods-img" :src="item.image" alt="" srcset="">
+				<img mode="scaleToFill" class="goods-img":src="item.show?item.image:''" alt="" srcset="">
 				<text class="text">{{item.name}}</text>
 				<view class="purchaseBox">
 					<view class="price">￥{{item.price}}</view>
@@ -12,19 +13,68 @@
 				</view>
 			</view>
 		</uni-grid-item>
-		<Popup ref="popup"/>
+		<Popup ref="popup" />
 	</uni-grid>
 </template>
 
 <script>
 	import Popup from '@/components/shop/Popup.vue'
-	const beefData = require('@/static/shop/data/beef.json')
 	export default {
-		components: {Popup},
+		components: {
+			Popup
+		},
 		data() {
 			return {
 				dynamicList: [],
-				products: beefData,
+				products: [{
+						"id": "1",
+						"name": "特产原味腐竹黄豆制品素食腐竹360克袋装",
+						"description": "",
+						"price": "28",
+						"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bean/WPS图片(1).jpg",
+						show: false
+					},
+					{
+						"id": "2",
+						"name": "特产桑甚茶叶112g*4礼盒装送家人朋友",
+						"description": "",
+						"price": "178",
+						"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(8).jpg",
+						show: false
+					},
+					{
+						"id": "3",
+						"name": "牦牛乳品全脂营养奶粉",
+						"description": "",
+						"price": "75",
+						"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bean/WPS图片(3).jpg",
+						show: false
+					},
+					{
+						"id": "4",
+						"name": "丛岭藏鸡蛋30枚一盘",
+						"description": "",
+						"price": "48",
+						"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/fast/WPS图片(4).jpg",
+						show: false
+					},
+					{
+						"id": "5",
+						"name": "博峪家文党花蜂蜜500g*3",
+						"description": "",
+						"price": "460",
+						"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/fast/WPS图片(5).jpg",
+						show: false
+					},
+					{
+						"id": "6",
+						"name": "年货节超值优惠大礼包",
+						"description": "",
+						"price": "399",
+						"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(3).jpg",
+						show: false
+					},
+				],
 				list: [{
 						url: '/static/c1.png',
 						text: 'Grid 1',
@@ -72,7 +122,19 @@
 				]
 			}
 		},
+		created() {
+			this.lazyImg(this.products);
+		},
 		methods: {
+			lazyImg(proList) {
+				for (let i = 0; i < proList.length; i++) {
+					this.createIntersectionObserver().relativeToViewport({
+						bottom: 20
+					}).observe('.item-' + i, (res) => {
+						proList[i].show = true
+					})
+				}
+			},
 			change(e) {
 				let {
 					index
@@ -106,7 +168,6 @@
 				this.dynamicList.splice(this.dynamicList.length - 1, 1)
 			},
 			clickCircle() {
-				console.log('点击圆圈');
 				this.$refs.popup.openPopup();
 			},
 			toDetail(item) {

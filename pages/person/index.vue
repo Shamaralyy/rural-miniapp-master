@@ -2,24 +2,24 @@
 	<view>
 		<u-navbar @leftClick="leftClick()" title="首页" :autoBack="true" :placeholder="true" bgColor="#ffffff00"
 			leftIconColor="black" :titleStyle="{ color: 'black' }"></u-navbar>
-		<Home v-if="currentTab == 0" />
-		<Staff v-if="currentTab == 1" />
-		<Order v-if="currentTab == 2" />
-		<Footer @getTab="getTab" />
+		<Home @changeCurrentTab="changeCurrentTab" v-if="currentTab == 0" />
+<!-- 		<Staff v-if="currentTab == 1" />
+		<Order v-if="currentTab == 2" /> -->
+		<!-- <Footer @getTab="getTab" /> -->
 	</view>
 </template>
 
 <script>
 	import Home from '@/components/person/Home.vue'
-	import Staff from '@/components/person/Staff.vue'
-	import Order from '@/components/person/Order.vue'
+/* 	import Staff from '@/components/person/Staff.vue'
+	import Order from '@/components/person/Order.vue' */
 	import Footer from '@/components/person/Footer.vue'
 
 	export default {
 		components: {
 			Home,
-			Staff,
-			Order,
+/* 			Staff,
+			Order, */
 			Footer
 		},
 		data() {
@@ -36,7 +36,11 @@
 			getTab(val) {
 				console.log("点击的tab" + val);
 				this.currentTab = val;
-			}
+			},
+/* 			changeCurrentTab(index) {
+				console.log('111',index)
+				this.currentTab = index;
+			} */
 		}
 	}
 </script>

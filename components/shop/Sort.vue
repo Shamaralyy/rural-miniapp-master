@@ -1,20 +1,10 @@
 <template>
 	<!-- 因为swiper特性的关系，请指定swiper的高度 ，swiper的高度并不会被内容撑开-->
-	<swiper class="swiper" :indicator-dots="true">
+	<swiper class="swiper" :indicator-dots="false">
 		<swiper-item>
 			<!--  -->
 			<uni-grid :column="4" :highlight="true" @change="change" :showBorder="false">
 				<uni-grid-item v-for="(item, index) in list" :index="index" :key="indexF" style="height: 150rpx;">
-					<view class="grid-item-box">
-						<image :src="item.url" class="image" mode="aspectFill" />
-						<text class="text">{{ item.text }}</text>
-					</view>
-				</uni-grid-item>
-			</uni-grid>
-		</swiper-item>
-		<swiper-item>
-			<uni-grid :column="4" :highlight="true" @change="change" :showBorder="false">
-				<uni-grid-item v-for="(item, index) in list" :index="index" :key="index" style="height: 150rpx;">
 					<view class="grid-item-box">
 						<image :src="item.url" class="image" mode="aspectFill" />
 						<text class="text">{{ item.text }}</text>

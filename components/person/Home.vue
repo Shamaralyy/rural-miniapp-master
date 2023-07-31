@@ -5,14 +5,14 @@
 			<text style="margin-left: 622rpx;">客服</text>
 			<img class="icon i_service" src="@/static/person/service.svg" alt="" srcset="">
 		</view>
-		<Swiper />
+		<Swiper :info="bannerInfo"/>
 		<view class="flex-container">
 			<view class="card" style="margin-top: 120rpx;">
 				最新公告
 			</view>
 			<view class="nav">
-				<view class="nav-item" v-for="item,index in navList" :key="index">
-					<img class="nav-item-img" :src="item.imgSrc" alt="" srcset="">
+				<view class="nav-item" v-for="item,index in navList" :key="index" @tap="changeCurrent(index)">
+					<u-icon :name="item.imgSrc" color="rgb(8, 72, 40)" size="28"></u-icon>
 					<text>{{item.title}}</text>
 				</view>
 			</view>
@@ -62,20 +62,30 @@
 		},
 		data() {
 			return {
+				bannerInfo: [{
+						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/rural/r1.webp",
+					},
+					{
+						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/rural/r2.webp",
+					},
+					{
+						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/rural/r3.webp",
+					}
+				],
 				navList: [{
-						imgSrc: navSrc,
-						title: '技师入住'
+						imgSrc: 'home',
+						title: '首页'
 					},
 					{
-						imgSrc: navSrc,
-						title: '优惠券'
+						imgSrc: 'server-man',
+						title: '土著人入驻'
 					},
 					{
-						imgSrc: navSrc,
-						title: '下单须知'
+						imgSrc: 'rmb-circle',
+						title: '我的订单'
 					},
 					{
-						imgSrc: navSrc,
+						imgSrc: 'phone',
 						title: '在线客服'
 					}
 				],
@@ -103,6 +113,23 @@
 			},
 			getRegion(val) {
 				this.region = val;
+			},
+			changeCurrent(index) {
+				console.log(index)
+				if(index == 0) {
+					uni.navigateTo({
+						url: '/pages/person/index'
+					})
+				}else if(index == 1) {
+					uni.navigateTo({
+						url: '/pages/person/staff'
+					})
+				}else if(index == 2) {
+					uni.navigateTo({
+						url: '/pages/person/myOrder'
+					})
+				}
+/* 				this.$emit('changeCurrentTab',index); */
 			}
 		}
 	}

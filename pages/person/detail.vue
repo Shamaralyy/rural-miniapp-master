@@ -2,9 +2,9 @@
 	<view class="person-detail-container" ref="box">
 		<u-navbar @leftClick="leftClick()" title="详情" :autoBack="true" :placeholder="true" :bgColor="naviStyle.bg"
 			leftIconColor="black" :titleStyle="{ color: 'black' }"></u-navbar>
-		<img class="person-img" src="https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/person.webp" />
+		<img class="person-img" :src="personMsg.imgSrc" mode="aspectFill"/>
 		<view class="project-item">
-			<img :src="personMsg.imgSrc" alt="" />
+			<img :src="personMsg.imgSrc" mode="aspectFill" alt="" />
 			<view class="msg">
 				<view class="score">
 					{{personMsg.score}}分
@@ -33,7 +33,7 @@
 		<view class="card">
 			<view class="light-green">
 				<view class="person-comment-item" v-for="item,index in comments" :key="index">
-					<img class="person-comment-avatar" :src="item.avatar" alt="">
+					<u-avatar :src="item.avatar" size="45"></u-avatar>
 					<view class="person-comment-msg">
 						<text class="person-comment-username">{{item.username}}</text>
 						<text class="person-comment-grey">{{item.datetime}}</text>
@@ -50,43 +50,17 @@
 	import GreenNav from '@/components/person/GreenNav.vue'
 
 	export default {
+		props: ['msg'],
 		components: {
 			GreenNav
 		},
 		data() {
 			return {
+				personMsg: {},
 				kissFlag: false, //接触状态
 				kissPercent: 1, //接触百分比
 				kissInit: -1, //接触初始高度
-				personMsg: {
-					imgSrc: 'https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/person.webp',
-					title: '邓小东',
-					age: 41,
-					gender: '男',
-					words: '第一次来XXXXXXXX的地方',
-					detail: '服务区域：重庆市石柱县',
-					score: 4.8,
-					orderNum: 113,
-				},
-				comments: [{
-						avatar: 'https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/用户头像.jpg',
-						username: 'R***r',
-						datetime: '2023-06-30 23:32:30',
-						content: '好评'
-					},
-					{
-						avatar: 'https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/用户头像.jpg',
-						username: 'R***r',
-						datetime: '2023-06-30 23:32:30',
-						content: '好评'
-					},
-					{
-						avatar: 'https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/用户头像.jpg',
-						username: 'R***r',
-						datetime: '2023-06-30 23:32:30',
-						content: '好评'
-					},
-				]
+				comments: []
 			}
 		},
 		computed: {
@@ -99,8 +73,17 @@
 			}
 		},
 		mounted() {
-			console.log('this.$refs', this.$refs);
-			this.$refs.box.addEventListener('scroll', this.handleScroll); // 监听滚动事件
+			/* this.$refs.box.addEventListener('scroll', this.handleScroll); // 监听滚动事件 */
+			this.personMsg = JSON.parse(this.msg);
+			let randomNumber = Math.floor(Math.random() * 21);
+			let data = require('@/static/person/data/comment.json');
+			let randomArr = this.getRandomArr(2,5,20);
+			console.log('randomArr',randomArr);
+			for(let i = 0;i<randomArr.length;i++) {
+				let idx = randomArr[i];
+				console.log(data.reviews[idx])
+				this.comments.push(data.reviews[idx]);
+			}
 		},
 		methods: {
 			handleScroll() {
@@ -109,8 +92,25 @@
 			},
 			toOrder() {
 				uni.navigateTo({
-					url: '/subpages/person/order'
+					url: '/pages/person/order'
 				})
+			},
+			leftClick() {
+				uni.navigateBack({
+					delta: 1
+				});
+			},
+			 // 生成min-max之间的随机整数(0-num)作为数量
+			getRandomArr(min,max,num) {
+				let numbers = [];
+				let count = Math.floor(Math.random() * (max-min+1)) + min;
+				while (numbers.length < count) {
+				  var randomNumber = Math.floor(Math.random() * (num+1));
+				  if (!numbers.includes(randomNumber)) {
+				    numbers.push(randomNumber);
+				  }
+				}
+				return numbers;
 			}
 		}
 	}
@@ -232,17 +232,11 @@
 		margin-bottom: 20rpx;
 	}
 
-	.person-comment-avatar {
-		width: 120rpx;
-		height: 120rpx;
-		border-radius: 50%;
-		margin-right: 20rpx;
-	}
-
 	.person-comment-msg {
 		display: flex;
 		flex-direction: column;
 		line-height: 43rpx;
+		margin-left: 20rpx;
 	}
 
 	.person-comment-username {

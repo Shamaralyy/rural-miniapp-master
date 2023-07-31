@@ -22,6 +22,11 @@ Component({
 			selectedIconPath: "/static/card_nav_5_1.png",
 			text: "共建"
 		}, {
+			pagePath: "/pages/person/index",
+			iconPath: "/static/card_nav_4.png",
+			selectedIconPath: "/static/card_nav_4_1.png",
+			text: "土著人"
+		}, {
 			pagePath: "/pages/shop/home",
 			iconPath: "/static/card_nav_5.png",
 			selectedIconPath: "/static/card_nav_5_1.png",

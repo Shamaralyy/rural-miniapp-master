@@ -36,17 +36,17 @@ const state = {
 		}
 	],
 	addrs: [{
-			name: '哈哈哈',
+			name: '李女士',
 			phone: '17830941432',
 			addr: '北京市北京市东城区',
-			detail: '嘿嘿',
+			detail: '1号楼',
 			default: true,
 		},
 		{
-			name: '呆呆鸟',
+			name: '陈小风',
 			phone: '15923244984',
-			addr: '上海外滩',
-			detail: '某某地区',
+			addr: '重庆市南岸区',
+			detail: '上新街23号',
 			default: false,
 		}
 	]

@@ -13,6 +13,13 @@
 			}
 		},
 		{
+			"path": "pages/shop/home",
+			"style": {
+				"navigationBarTitleText": "好物商城",
+				"navigationStyle": "custom"
+			}
+		},
+		{
 			"path": "pages/index/mapRural",
 			"style": {
 				"navigationBarTitleText": "地图找村",
@@ -48,13 +55,7 @@
 				"navigationStyle": "custom"
 			}
 		},
-		{
-			"path": "pages/shop/home",
-			"style": {
-				"navigationBarTitleText": "好物商城",
-				"navigationStyle": "custom"
-			}
-		},
+
 		{
 			"path": "pages/shop/detail",
 			"style": {
@@ -101,6 +102,38 @@
 			"path": "pages/shop/settle",
 			"style": {
 				"navigationBarTitleText": "结算",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/person/index",
+			"style": {
+				"navigationBarTitleText": "人员主页",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/person/detail",
+			"style": {
+				"navigationBarTitleText": "人员详情",
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/person/order",
+			"style": {
+				"navigationBarTitleText": "订单确认",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/person/staff",
+			"style": {
+				"navigationBarTitleText": "乡村代理人",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/person/myOrder",
+			"style": {
+				"navigationBarTitleText": "我的订单",
 				"navigationStyle": "custom"
 			}
 		}
@@ -673,24 +706,6 @@
 					"navigationBarTitleText": "乡村名片全景载入中...",
 					"navigationStyle": "custom"
 				}
-			}, {
-				"path": "person/index",
-				"style": {
-					"navigationBarTitleText": "人员主页",
-					"navigationStyle": "custom"
-				}
-			}, {
-				"path": "person/detail",
-				"style": {
-					"navigationBarTitleText": "人员详情",
-					"navigationStyle": "custom"
-				}
-			}, {
-				"path": "person/order",
-				"style": {
-					"navigationBarTitleText": "订单确认",
-					"navigationStyle": "custom"
-				}
 			}
 		]
 	}],
@@ -712,17 +727,23 @@
 				"iconPath": "/static/card_nav_6.png", //未选中tab图标路径
 				"selectedIconPath": "/static/card_nav_6_1.png" //选中tab图标路径
 			},
-			{
-				"pagePath": "pages/index/rural",
-				"text": "发现",
-				"iconPath": "/static/card_nav_3.png", //未选中tab图标路径
-				"selectedIconPath": "/static/card_nav_3_1.png" //选中tab图标路径
-			},
+			/* 			{
+							"pagePath": "pages/index/rural",
+							"text": "发现",
+							"iconPath": "/static/card_nav_3.png", //未选中tab图标路径
+							"selectedIconPath": "/static/card_nav_3_1.png" //选中tab图标路径
+						}, */
 			{
 				"pagePath": "pages/build/buildad",
 				"text": "共建",
 				"iconPath": "/static/card_nav_5.png", //未选中tab图标路径
 				"selectedIconPath": "/static/card_nav_5_1.png" //选中tab图标路径
+			},
+			{
+				"pagePath": "pages/person/index",
+				"text": "土著人",
+				"iconPath": "/static/card_nav_4.png", //未选中tab图标路径
+				"selectedIconPath": "/static/card_nav_4_1.png" //选中tab图标路径
 			},
 			{
 				"pagePath": "pages/shop/home",

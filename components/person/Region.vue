@@ -33,4 +33,8 @@
 	.region-container {
 		position: absolute;
 	}
+	.i_locate{
+		width: 34rpx;
+		height: 34rpx;
+	}
 </style>

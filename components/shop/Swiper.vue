@@ -15,24 +15,9 @@
 <script>
 	export default {
 		components: {},
+		props: ['info'],
 		data() {
 			return {
-				info: [{
-						colorClass: 'uni-bg-red',
-						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(6).jpg",
-						content: '内容 A'
-					},
-					{
-						colorClass: 'uni-bg-green',
-						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(5).jpg",
-						content: '内容 B'
-					},
-					{
-						colorClass: 'uni-bg-blue',
-						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/beef/WPS图片(3).jpg",
-						content: '内容 C'
-					}
-				],
 				current: 0,
 				mode: 'default',
 				dotsStyles: {
@@ -44,6 +29,8 @@
 				},
 				swiperDotIndex: 0
 			}
+		},
+		mounted() {
 		},
 		methods: {
 			change(e) {

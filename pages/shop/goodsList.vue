@@ -7,16 +7,18 @@
 			<input type="text" placeholder="搜索商品" v-model="searchText">
 		</view>
 		<view class="nav">
-			<view v-for="(item,index) in navArr" :key="index" @click="changeN(index)" :class="['nav-item',{active:n==(index+1)}]">
+			<view v-for="(item,index) in navArr" :key="index" @click="changeN(index)"
+				:class="['nav-item',{active:n==(index+1)}]">
 				<text>{{item}}</text>
 				<Triangle v-if="index==2||index==3" class="triangle" :isActive="n==index+1" :order="order" />
 			</view>
 			<img :src="viewSrc" alt="" srcset="" class="img-view" @click="changeView">
 		</view>
 		<ul class="product-items" v-if="isGrid">
-			<li v-for="product in filteredProducts" :key="product.id" @click="toDetail(product)">
+			<li :class="'item-'+index" v-for="product,index in filteredProducts" :key="product.id"
+				@click="toDetail(product)">
 				<view class="product-img">
-					<img :src="product.image" alt="Product image">
+					<img :src="product.show?product.image:''" alt="Product image">
 				</view>
 				<view class="product-info">
 					<h2>{{ product.name }}</h2>
@@ -29,9 +31,9 @@
 			</li>
 		</ul>
 		<ul class="product-list-items" v-if="!isGrid">
-			<li v-for="product in filteredProducts" :key="product.id" @click="toDetail(product)">
+			<li :class="'item-'+index" v-for="product in filteredProducts" :key="product.id" @click="toDetail(product)">
 				<view>
-					<img class="product-list-img" :src="product.image" alt="Product image">
+					<img class="product-list-img" :src="product.show?product.image:''" alt="Product image">
 				</view>
 				<view class="product-list-info">
 					<h2>{{ product.name }}</h2>
@@ -90,10 +92,7 @@
 			}
 		},
 		onLoad(options) {
-			console.log(options.index)
 			this.idx = options.index;
-		},
-		mounted() {
 			if (this.idx == 0) {
 				const data = require('@/static/shop/data/beef.json')
 				this.products = data;
@@ -118,13 +117,25 @@
 			} else if (this.idx == 7) {
 				const data = require('@/static/shop/data/condiment.json')
 				this.products = data;
-			}
+			};
+		},
+		mounted() {
+			this.lazyImg(this.products);
 		},
 		methods: {
 			leftClick() {
 				uni.navigateBack({
 					delta: 1
 				});
+			},
+			lazyImg(proList) {
+				for (let i = 0; i < proList.length; i++) {
+					this.createIntersectionObserver().relativeToViewport({
+						bottom: 20
+					}).observe('.item-' + i, (res) => {
+						proList[i].show = true
+					})
+				}
 			},
 			addToCart(product) {
 				// 加入购物车的逻辑
@@ -243,7 +254,7 @@
 	.product-items li .product-info {
 		padding: 10px;
 	}
-	
+
 	.product-list-info {
 		margin-right: 20rpx;
 	}
@@ -260,8 +271,9 @@
 		font-size: 40rpx;
 		font-weight: 600;
 	}
-	
-	.circle,.list-circle {
+
+	.circle,
+	.list-circle {
 		position: absolute;
 		display: flex;
 		justify-content: center;
@@ -277,7 +289,7 @@
 		right: 20rpx;
 		bottom: 20rpx;
 	}
-	
+
 	.list-circle {
 		right: 80rpx;
 		bottom: 30rpx;
@@ -324,7 +336,7 @@
 		font-weight: 600;
 		margin-top: 50rpx;
 	}
-	
+
 	.nav-item {
 		position: relative;
 	}

@@ -130,11 +130,6 @@ export default {
 				{ name: imgBaseUrl + 'index_nav_2.png' + imgSuffix[1], title: '名片示例', url: '/subpages/index/demo' },
 				{ name: imgBaseUrl + 'index_nav_10.png' + imgSuffix[1], title: '名片学院', url: '/subpages/edu/edu' },
 				{
-					name: imgBaseUrl + 'index_nav_11.png' + imgSuffix[1],
-					title: '乡村经理人',
-					url: '/subpages/person/index'
-				},
-				{
 					name: 'https://cdn.xiangcunmingpian.com/app/menuIcon/menu%20(105).png' + imgSuffix[1],
 					title: '常见问题',
 					url: '/subpages/user/qa'

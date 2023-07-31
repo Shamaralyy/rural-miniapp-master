@@ -3,55 +3,63 @@
 		"name": "特产黑木耳干货250g袋装肉厚无根免摘",
 		"description": "",
 		"price": "38",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(1).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(1).jpg",
+		"show": false
 	},
 	{
 		"id": "2",
 		"name": "特产香菇干货250g袋装",
 		"description": "",
 		"price": "38",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(2).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(2).jpg",
+		"show": false
 	},
 	{
 		"id": "3",
 		"name": "香菇干货特产香菇礼盒500g盒装",
 		"description": "",
 		"price": "86",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(3).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(3).jpg",
+		"show": false
 	},
 	{
 		"id": "4",
 		"name": "甘南干货虫花草干货新鲜150g",
 		"description": "",
 		"price": "39",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(4).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(4).jpg",
+		"show": false
 	},
 	{
 		"id": "5",
 		"name": "甘南特产蕨麻50g*10袋",
 		"description": "",
 		"price": "99",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(5).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(5).jpg",
+		"show": false
 	},
 	{
 		"id": "6",
 		"name": "年货节超值大礼包",
 		"description": "",
 		"price": "399",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(6).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(6).jpg",
+		"show": false
 	},
 	{
 		"id": "7",
 		"name": "羊肚菌150g袋装",
 		"description": "",
 		"price": "188",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(7).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(7).jpg",
+		"show": false
 	},
 	{
 		"id": "8",
 		"name": "特产桑甚茶叶112g*4礼盒装",
 		"description": "",
 		"price": "178",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(8).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(8).jpg",
+		"show": false
 	}
 ]

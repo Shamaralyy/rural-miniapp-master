@@ -3,13 +3,15 @@
 		"name": "特产五谷杂粮杂面500g袋装绿色有机五谷膳食佳品",
 		"description": "",
 		"price": "16",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/grain/WPS图片(1).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/grain/WPS图片(1).jpg",
+		"show": false
 	},
 	{
 		"id": "2",
 		"name": "年货节超值优惠大礼包",
 		"description": "",
 		"price": "299",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/grain/WPS图片(2).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/grain/WPS图片(2).jpg",
+		"show": false
 	}
 ]

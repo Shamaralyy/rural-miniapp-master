@@ -1,5 +1,7 @@
 <template>
 	<view class="order-container">
+		<u-navbar @leftClick="leftClick()" title="我的订单" :autoBack="true" :placeholder="true"
+			leftIconColor="black" :titleStyle="{ color: 'black' }"></u-navbar>
 		<u-tabs :list="screenList" lineWidth="20" lineHeight="4" lineColor="#04c354" @change="tabChange" :activeStyle="{
 				color: '#303133',
 				fontWeight: 'bold',
@@ -59,6 +61,11 @@
 			}
 		},
 		methods: {
+			leftClick() {
+				uni.navigateBack({
+					delta: 1
+				});
+			},		
 			tabChange(para) {
 				console.log('para', para)
 				if (this.current == para.index) return;
@@ -72,6 +79,12 @@
 </script>
 
 <style>
+	page {
+		background: #f1f1f1;
+		height: 100%;
+		width: 100%;
+	}
+	
 	.order-container {
 		display: flex;
 		flex-direction: column;

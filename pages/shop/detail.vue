@@ -1,15 +1,8 @@
 <template>
 	<view class="detail_box">
-		<u-navbar
-			@leftClick="leftClick()"
-			title="商品详情"
-			:autoBack="true"
-			:placeholder="true"
-			bgColor="#ffffff00"
-			leftIconColor="black"
-			:titleStyle="{ color: 'black' }"
-		></u-navbar>
-		<Swiper style="width: 100%;margin-bottom: 110rpx;" />
+		<u-navbar @leftClick="leftClick()" title="商品详情" :autoBack="true" :placeholder="true" bgColor="#ffffff00"
+			leftIconColor="black" :titleStyle="{ color: 'black' }"></u-navbar>
+		<Swiper :info="info" style="width: 100%;margin-bottom: 110rpx;" />
 		<view class="card">
 			<view class="priceBox">
 				<view class="price">
@@ -29,15 +22,15 @@
 			<text style="font-size: 26rpx;">请选择规格</text>
 			<img class="i_select" src="@/static/shop/detail_select.svg" alt="" srcset="">
 		</view>
-		<Nav/>
-		<Assess/>
+		<Nav />
+		<Assess />
 		<view class="xq_tt">
 			———— 图文详情 ————
 		</view>
 		<view class="card detail-img">
 			<img :src="msg.image" alt="" srcset="">
 		</view>
-		<Popup ref="popup"/>
+		<Popup ref="popup" />
 	</view>
 </template>
 
@@ -46,12 +39,27 @@
 	import Popup from '@/components/shop/Popup.vue'
 	import Nav from '@/components/shop/Nav.vue'
 	import Assess from '@/components/shop/Assess.vue'
-	
+
 	export default {
-		components: {Swiper,Popup,Nav,Assess},
+		components: {
+			Swiper,
+			Popup,
+			Nav,
+			Assess
+		},
 		data() {
 			return {
-				msg: {}
+				msg: {},
+				info: [{
+						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(6).jpg",
+					},
+					{
+						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/dry/WPS图片(5).jpg",
+					},
+					{
+						url: "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/beef/WPS图片(3).jpg",
+					}
+				],
 			}
 		},
 		onLoad: function(option) {
@@ -61,7 +69,9 @@
 		},
 		methods: {
 			leftClick() {
-				uni.navigateBack({ delta: 1 });
+				uni.navigateBack({
+					delta: 1
+				});
 			},
 			/* 选择规格 */
 			choosePopup() {
@@ -77,14 +87,14 @@
 		height: 100%;
 		width: 100%;
 	}
-	
+
 	.detail_box {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 130rpx;
 	}
-	
+
 	.card {
 		position: relative;
 		width: 670rpx;
@@ -95,36 +105,36 @@
 		line-height: 50rpx;
 		margin-top: 20rpx;
 	}
-	
+
 	.priceBox {
 		display: flex;
 	}
-	
+
 	.price {
 		font-size: 44rpx;
 		color: red;
 		font-weight: 600;
 	}
-	
+
 	.cutprice {
 		text-decoration: line-through;
 		color: grey;
 		margin: 10rpx 0 0 30rpx;
 		font-size: 28rpx;
 	}
-	
+
 	.mount {
 		color: gray;
 		font-size: 26rpx;
 	}
-	
+
 	/* 规格 */
 	.select-text {
 		color: gray;
 		font-size: 26rpx;
 		margin-right: 24rpx;
 	}
-	
+
 	.i_select {
 		position: absolute;
 		top: 20rpx;
@@ -132,13 +142,13 @@
 		width: 40rpx;
 		height: 40rpx;
 	}
-	
+
 	/* 图文详情 */
 	.xq_tt {
 		color: gray;
 		margin-top: 30rpx;
 	}
-	
+
 	.detail-img {
 		display: flex;
 		flex-direction: column;

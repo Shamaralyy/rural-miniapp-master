@@ -3,41 +3,47 @@
 		"name": "农家自制烟熏肉特色腊味腊排500g袋装",
 		"description": "",
 		"price": "52",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(1).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(1).jpg",
+		"show": false
 	},
 	{
 		"id": "2",
 		"name": "特产农家自制烟熏肉特色腊味五花肉500g袋装",
 		"description": "",
 		"price": "52",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(2).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(2).jpg",
+		"show": false
 	},
 	{
 		"id": "3",
 		"name": "年货节超值优惠大礼包",
 		"description": "",
 		"price": "399",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(3).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(3).jpg",
+		"show": false
 	},
 	{
 		"id": "4",
 		"name": "年货节超值优惠大礼包混装腊肉5斤装",
 		"description": "",
 		"price": "268",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(4).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(4).jpg",
+		"show": false
 	},
 	{
 		"id": "5",
 		"name": "年货节超值优惠大礼包混装腊肉5斤装",
 		"description": "",
 		"price": "268",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(5).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(5).jpg",
+		"show": false
 	},
 	{
 		"id": "6",
 		"name": "年货节超值优惠大礼包混装腊肉10斤装",
 		"description": "",
 		"price": "530",
-		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(6).jpg"
+		"image": "https://mp-6ee8886e-bdb9-43fa-a027-9714a1deafe6.cdn.bspapp.com/bacon/WPS图片(6).jpg",
+		"show": false
 	}
 ]
